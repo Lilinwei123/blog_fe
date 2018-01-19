@@ -8,8 +8,8 @@ Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
+  el: '#app', /* 定义作用范围就是index.html里的id为app的范围哪 */
+  router, /* 引入路由 */
+  components: { App }, /* 给Vue实例初始化一个App组件作为template 相当于默认组件 */
+  template: '<App/>' /* 注册引入组件App.vue */
 })
